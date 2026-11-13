@@ -14,12 +14,12 @@ un message de succes ou d'erreur sur la page.
 
 ## Publication
 
-La branche `main` est publiee par GitHub Actions vers GitHub Pages. Chaque
-push sur `main` lance le workflow `.github/workflows/pages.yml`.
+Adresse principale : <https://galeriebonheritage.pages.dev/>.
 
-Adresse attendue : <https://nkurunzizaabdoulhakim-cpu.github.io/Site-web/>
+Le site est publie sur Cloudflare Pages par televersement direct. Pour publier
+une mise a jour, televerser a nouveau les fichiers statiques du site dans le
+projet `galeriebonheritage` depuis **Workers & Pages** dans Cloudflare.
 
-Dans GitHub, verifier le workflow dans **Actions** puis la cible dans
-**Settings > Pages**. Si GitHub indique que Pages n'est pas disponible pour
-ce depot prive, garder le depot prive et choisir un hebergeur compatible,
-ou confirmer explicitement que le depot peut devenir public.
+Le depot conserve aussi son deploiement GitHub Pages automatique :
+chaque push sur `main` lance `.github/workflows/pages.yml` et publie
+<https://nkurunzizaabdoulhakim-cpu.github.io/Site-web/>.
