@@ -17,8 +17,10 @@ un message de succes ou d'erreur sur la page.
 Adresse principale : <https://galeriebonheritage.pages.dev/>.
 
 Le site est publie sur Cloudflare Pages par televersement direct. Pour publier
-une mise a jour, televerser a nouveau les fichiers statiques du site dans le
-projet `galeriebonheritage` depuis **Workers & Pages** dans Cloudflare.
+une mise a jour, creer un deploiement dans **Workers & Pages**, puis televerser
+le dossier contenant `index.html`, `script.js`, `style.css` et `assets/`.
+Eviter les archives ZIP creees sous Windows : leurs chemins internes peuvent
+empecher Cloudflare de retrouver les images.
 
 Le depot conserve aussi son deploiement GitHub Pages automatique :
 chaque push sur `main` lance `.github/workflows/pages.yml` et publie
